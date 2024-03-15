@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="manhattan.css">
 </head>
 <body>
-  <header>Contact Us</header>
-  <nav>
+  <header>
+    <img class="logo" src="coffee.jpg" datatype="image/jpeg" alt="logo">
+    <div>Contact Us</div>
+  </header>
+  <nav class="navig">
     <a href="./index.html">
       Home
     </a>
@@ -23,8 +27,43 @@
       Contact Us
     </a>
   </nav>
-  <div>
-    <p>Hi. This is the contact us page. </p>
+  <div class="column">
+    <div class="column_left">
+      <div class="container">
+        <p>Hi. This is the resources page. </p>
+        <p>The "Kernel Data Inpage Error" is a stop code displayed on a blue screen of death (BSOD) on Windows systems. This error can be caused by several issues, usually related to problems with the computer's hardware or issues with the file system. Here are the most common causes:
+
+          Bad Sectors on the Hard Drive: The error can occur if the system cannot read data from the hard drive due to bad sectors. Running a disk check can help identify and possibly fix bad sectors.
+
+          Memory Issues: Problems with your computer's RAM can also cause this error. Running memory diagnostics can help identify if this is the case.
+
+          Outdated or Faulty Drivers: If certain device drivers are outdated or not working correctly, it might lead to system instability and errors like this one. Updating your drivers can often resolve the issue.
+
+          Viruses or Malware: Malware can sometimes cause system instability and errors. Running a full system scan with an updated antivirus program can help find and remove any malicious software that might be causing the problem.
+
+          Corrupted System Files: The Windows system files can become corrupted due to software conflicts, abrupt shutdowns, or other reasons. The System File Checker (SFC) utility can scan for and repair corrupted system files.
+
+          Here are some steps you can take to troubleshoot the "Kernel Data Inpage Error":
+
+          Run a Disk Check: Open Command Prompt as an administrator and type chkdsk /f /r and press Enter. This will schedule a disk check on the next system reboot.
+
+          Run Memory Diagnostics: Type Windows Memory Diagnostic into the Windows search bar and run the tool. Choose to restart your computer and check for memory issues.
+
+          Update Drivers: Make sure all your device drivers, especially for the hard drive and chipset, are up to date. You can update drivers through the Device Manager or by visiting the manufacturer's website.
+
+          Run System File Checker: Open Command Prompt as an administrator and type sfc /scannow and press Enter. This will scan for and attempt to repair corrupted system files.
+
+          Check for Malware: Run a full system scan with your antivirus software to check for and remove any malware.</p>
+      </div>
+    </div>
+    <div class="column_right">
+      <div class="container">
+        <p>Consolidation of Whitespace: When the HTML parser encounters consecutive whitespace characters (such as spaces, tabs, or new lines) in the text content of an HTML document, it consolidates them into a single space when rendering the page.
+          Layout Formatting: This behavior allows developers to use whitespace in the HTML source code for indentation, spacing, and organizing without affecting how the content is displayed in the browser. This makes the code easier to read and maintain without influencing the visual presentation of the content.
+          Exception - Tag: The  tag is an exception to this rule. Content within a element is displayed in a fixed-width font (usually Courier), and all whitespace characters are preserved, making it suitable for displaying code or preformatted text.
+          Not Affecting CSS: While HTML itself is whitespace-insensitive within the content, CSS can be used to control spacing, indentation, and positioning of elements explicitly. Margins, padding, and white-space properties in CSS allow for fine-grained control over how whitespace is handled visually.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
