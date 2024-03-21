@@ -15,8 +15,61 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+
+.main-blogs {
+  background-color: palegoldenrod;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+  width: 30%;
+  flex-direction: column;
+}
+
+.lan-learn-blog {
+  background-color: palegoldenrod;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.lear-env-blog {
+  background-color:lightsalmon;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+
+}
+.pers-ref-blog {
+  background-color: cadetblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+}
+
+h1 {
+  background-color: lightsteelblue;
+  text-align: center;
+  padding: 20px;
+  font-size: 46px;
+  font-weight: bolder;
+  color: gray;
+  font-family: serif;
+}
+
+h2 {
+  margin: 10px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 7px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Calibri", sans-serif ;
+  margin: 3px;
+}
 body {
-  background-color: aquamarine;
+  background: linear-gradient( white ,steelblue);
   width: 100%;
   height: 100%;
   position:relative;
@@ -28,46 +81,56 @@ body {
   background-color: #ddd;
   color: black;
 }
-.container {
 
-  padding: 10px;
-  border: 3px solid black;
-  margin: 10px;
-}
 .column {
   display: flex;
   font-size: 20px;
   padding: 20px;
 }
 .column_left {
-
   width: 70%;
 
 }
 .column_right {
   width: 30%;
 }
+
+.column_blogs {
+  width:33.3%;
+}
 main {
+  margin-top: 45px;
+  background-image: url("clouds.jpg");
+  background-size:cover;
+  background-repeat: repeat-y;
+
   flex: 1;
   width: 60%;
-  border-right: 2px solid darkslategray;
-  border-left:  2px solid darkslategray;
+  border-right: 2px blue;
+  border-left:  2px blue;
 }
 
 header {
-  background-color: #71a357;
+  width: 100%;
+  background-color: lightsteelblue;
   text-align: center;
-  padding: 20px;
   font-size: 46px;
   font-weight: bolder;
   color: darkblue;
   font-family: "Arial Black", sans-serif;
-}
-.logo {
-  width: 250px;
+  position: fixed;
+
 }
 
-#containerr {
+.logo {
+  position: absolute;
+  left:0;
+  width: 75px;
+  border-radius: 100px;
+  border-width: 5px;
+}
+
+#container {
   display: flex;
   flex-direction: column;
   height: 100%;
