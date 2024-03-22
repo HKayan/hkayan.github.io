@@ -1,4 +1,6 @@
 .navig {
+  width: 100%;
+  height: 70px;
   overflow: hidden;
   background-color: #333;
   display: flex;
@@ -7,29 +9,56 @@
 }
 
 .navig a{
-  font-size: 35px;
+  font-size: 36px;
+  font-family:  var, Inter, sans-serif;
   float: left;
-  display: block;
+  display: grid;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+.navig a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+.navig a img {
+  justify-content: left;
+  width: 75px;
+  border-radius: 100px;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.logo-image {
+  width: 75px;
+  justify-content: center;
+}
+
 .main-blogs {
-  background-color: palegoldenrod;
+  background-color: rgba(222, 225, 251, 0.916);
   border-radius: 15px;
   padding: 10px;
   margin: 15px;
-  width: 30%;
-  flex-direction: column;
 }
+.main-homepage {
+  background: lightskyblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 15px;
+}
+
 
 .lan-learn-blog {
   background-color: palegoldenrod;
   border-radius: 15px;
   padding: 10px;
   margin: 15px;
+  line-height: 25px;
+
 }
 
 .lear-env-blog {
@@ -37,6 +66,7 @@
   border-radius: 15px;
   padding: 10px;
   margin: 15px;
+  line-height: 25px;
 
 }
 .pers-ref-blog {
@@ -44,48 +74,58 @@
   border-radius: 15px;
   padding: 10px;
   margin: 15px;
+  line-height: 25px;
 }
 
 h1 {
-  background-color: lightsteelblue;
+  background-color: rgba(176, 196, 222, 0.374);
   text-align: center;
   padding: 20px;
   font-size: 46px;
   font-weight: bolder;
-  color: gray;
-  font-family: serif;
+  color: rgb(54, 52, 52);
+  font-family: Inter var, Inter, sans-serif;
 }
 
 h2 {
-  margin: 10px;
+  background: whitesmoke;
+  font-family: Inter var, Inter, sans-serif;
+  margin: 15px;
   text-align: center;
-  background-color: whitesmoke;
   border-radius: 7px;
 }
 
 h3 {
-  font-size: 30px;
-  font-family: "Calibri", sans-serif ;
-  margin: 3px;
+  font-family: Inter var, Inter, sans-serif;
+  font-size: 27px;
+  margin: 7px;
+  color: rgb(44, 90, 215);
 }
+
+h4 {
+  background: skyblue;
+  border-radius: 10px;
+  font-size: 45px;
+  font-family: Inter var, Inter, sans-serif;
+  margin: 15px;
+  text-align: center;
+}
+
 body {
   background: linear-gradient( white ,steelblue);
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   position:relative;
   margin: 0;
   padding: 0;
 }
 
-.navig a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .column {
   display: flex;
-  font-size: 20px;
   padding: 20px;
+  font-family: Inter var,Inter,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 .column_left {
   width: 70%;
@@ -93,19 +133,26 @@ body {
 }
 .column_right {
   width: 30%;
+  
 }
 
 .column_blogs {
-  width:33.3%;
+  width:466px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 810px;
+  margin-top: 60px;
 }
+
 main {
-  margin-top: 45px;
+  display: grid;
+  max-width: 1450px;
+  width: 100%;
+  margin: 45px auto;
   background-image: url("clouds.jpg");
   background-size:cover;
   background-repeat: repeat-y;
-
   flex: 1;
-  width: 60%;
   border-right: 2px blue;
   border-left:  2px blue;
 }
@@ -122,12 +169,22 @@ header {
 
 }
 
-.logo {
-  position: absolute;
-  left:0;
-  width: 75px;
-  border-radius: 100px;
-  border-width: 5px;
+#contact-img {
+width: 300px;
+float: right;
+border-radius: 40px;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-img {
+  width: 300px;
+  border-radius: 80px;
+  margin: 20px;
 }
 
 #container {
@@ -139,9 +196,11 @@ header {
   align-items: center;
 }
 footer {
+  max-width: 100%;
+  width: 100%;
   padding: 10px 0;
-  height: 100px;
-  background-color: gray;
+  height: 50px;
+  background-color: rgb(130, 159, 178);
 }
 footer div {
   text-align:center;
@@ -154,3 +213,20 @@ footer div {
 .social-media img{
   width: 25px;
 }
+.column_blogs::-webkit-scrollbar {
+  width: 25px;
+  background: transparent;
+}
+
+.column_blogs::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.column_blogs::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc;
+}
+
+.column_blogs::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
