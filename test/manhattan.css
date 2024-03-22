@@ -99,10 +99,16 @@ h3 {
   font-family: Inter var, Inter, sans-serif;
   font-size: 27px;
   margin: 7px;
+<<<<<<< HEAD
   color: #646464;
 }
 
 
+=======
+  color: rgb(44, 90, 215);
+}
+
+>>>>>>> 35f1774c74fd2e676bea1e0a149d7c075794a2d1
 h4 {
   background: skyblue;
   border-radius: 10px;
@@ -134,7 +140,11 @@ body {
 }
 .column_right {
   width: 30%;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 35f1774c74fd2e676bea1e0a149d7c075794a2d1
 }
 
 .column_blogs {
@@ -169,6 +179,7 @@ header {
   position: fixed;
 
 }
+<<<<<<< HEAD
 .blog-img {
   width: 388px;
   margin-bottom: 8px;
@@ -178,6 +189,13 @@ header {
   width: 300px;
   float: right;
   border-radius: 40px;
+=======
+
+#contact-img {
+width: 300px;
+float: right;
+border-radius: 40px;
+>>>>>>> 35f1774c74fd2e676bea1e0a149d7c075794a2d1
 }
 
 .image-center {
@@ -235,6 +253,7 @@ footer div {
   background: #999;
 }
 
+<<<<<<< HEAD
 #contact-form {
   display: flex;
   width: 300px;
@@ -246,3 +265,5 @@ footer div {
   align-items: center;
   padding: 5px;
 }
+=======
+>>>>>>> 35f1774c74fd2e676bea1e0a149d7c075794a2d1
