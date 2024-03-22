@@ -201,7 +201,11 @@ header {
   font-family: "Arial Black", sans-serif;
   position: fixed;
 }
-
+/* Style for main blog post images */
+.main-blog-img {
+  width: 370px;
+  margin-bottom: 8px;
+}
 /* Style for blog post images */
 .blog-img {
   width: 388px;
