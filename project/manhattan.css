@@ -241,6 +241,7 @@ header {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  max-width: max-content;
 }
 
 /* Footer styling */
@@ -300,3 +301,17 @@ footer div {
   padding: 5px;
 }
 
+.image-slider img {
+  width: 500px; /* Resimlerin genişliğini konteyner genişliğine sığdırır */
+  object-fit: cover;
+  height: auto; /* Yükseklik orijinal en-boy oranını koruyacak şekilde otomatik ayarlanır */
+  display: block; /* Resimler blok olarak ayarlanır, bu da alt alta dizilmesini önler */
+  padding: 25px;
+}
+
+
+.image-slider {
+  max-width: 600px; /* Slider'ın maksimum genişliği */
+  margin: auto; /* Slider'ı merkeze alır */
+  overflow: hidden; /* Taşan kısımları keser */
+}
