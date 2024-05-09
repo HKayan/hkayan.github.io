@@ -9,3 +9,24 @@ $(document).ready(function(){
         arrows: true
     });
 });
+
+$(document).ready(function() {
+    $("#contact-form form").validate({
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            message: "required"
+        },
+        messages: {
+            name: "Please enter your name",
+            email: "Please enter a valid email address",
+            message: "Please enter a message"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+});
