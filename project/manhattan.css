@@ -135,7 +135,7 @@ body {
 
 /* Flex container for column layout */
 .column {
-  display: flex;
+  display: block;
   padding: 20px;
   font-family: Inter var,Inter,sans-serif;
   font-size: 18px;
@@ -426,8 +426,9 @@ details[open] summary {
 }
 
 .image-gallery img {
-  width: 700px; /* Ayarlayın */
+  width: 70px; /* Ayarlayın */
   padding: 5px; /* Ayarlayın */
+  object-fit: scale-down;
   transition: transform 0.2s ease;
 }
 

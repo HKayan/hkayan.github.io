@@ -45,6 +45,19 @@ $(document).ready(function() {
             $('#language-learning-container').append(item);
         });
 
+        // Handle Learning Environment data
+        $.each(data.LearningEnvironment, function(key, val) {
+            var item = '<div class="lear-env-blog"><h3>' + val.title + '</h3><img class="blog-img" src="' + val.image + '" alt="' + val.title + '"><div class="content"><p class="shortText">' + val.content.substring(0, 100) + '...</p><p class="fullText" style="display:none;">' + val.content + '</p><button class="toggleButton">Read More/Less</button></div>';
+            $('#learning-environment-container').append(item);
+        });
+
+        // Handle Personal Reflections data
+        $.each(data.PersonalReflections, function(key, val) {
+            var item = '<div class="pers-ref-blog"><h3>' + val.title + '</h3><img class="blog-img" src="' + val.image + '" alt="' + val.title + '"><div class="content"><p class="shortText">' + val.content.substring(0, 100) + '...</p><p class="fullText" style="display:none;">' + val.content + '</p><button class="toggleButton">Read More/Less</button></div>';
+            $('#personal-reflections-container').append(item);
+        });
+
+
         $('.toggleButton').on('click', function() {
             var fullText = $(this).siblings('.fullText');
             var shortText = $(this).siblings('.shortText');
