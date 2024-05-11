@@ -432,5 +432,5 @@ details[open] summary {
 }
 
 .image-gallery img:hover {
-  transform: scale(2);
+  transform: scale(1.05);
 }
