@@ -180,7 +180,7 @@ body {
 
 /* Main content area styling */
 main {
-  display: grid;
+  display: block;
   max-width: 1450px;
   width: 100%;
   margin: 45px auto;
@@ -292,16 +292,66 @@ footer div {
 
 /* Contact form styling */
 #contact-form {
-  display: flex;
-  width: 300px;
-  justify-content: right;
+  background-color: #f0f8ff; /* Açık mavi, sayfanın geri kalanıyla daha uyumlu */
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif; /* Sitenizin kullanmış olabileceği genel font */
 }
+
 #contact-form h2 {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
+  text-align: center;
+  color: #333;
 }
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Giriş alanlarını genişletir */
+}
+
+#contact-form textarea {
+  height: 100px;
+  resize: none; /* Kullanıcıların textarea boyutunu değiştirmesini engeller */
+}
+
+#contact-form input[type="submit"] {
+  background-color: #007bff; /* Mavi ton, diğer butonlarla uyumlu */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#messageArea {
+  text-align: center;
+  color: #106ba3;
+  font-size: 16px;
+}
+
 
 .image-slider img {
   width: 100%;
@@ -375,3 +425,12 @@ details[open] summary {
   display: none;
 }
 
+.image-gallery img {
+  width: 700px; /* Ayarlayın */
+  padding: 5px; /* Ayarlayın */
+  transition: transform 0.2s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(2);
+}
