@@ -4,6 +4,7 @@
 <head>
     <!-- Meta tag for character encoding -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title of the webpage -->
     <title>AYBU LAP</title>
     <!-- Link to external CSS file for page styling -->
@@ -20,24 +21,25 @@
 <body>
 <!-- Header section containing navigation bar -->
 <header>
-    <nav class="navig">
-        <!-- Logo image link -->
-        <a class="logo-image" href="index.html">
-            <img src="icon.jpg" alt="logo" datatype="image/jpeg">
-        </a>
-        <!-- Navigation links -->
-        <a href="./index.html">Home</a>
-        <a href="./about_us.html">About Us</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./resources.html">Resources</a>
-        <a href="./contact_us.html">Contact Us</a>
+    <div class="logo">
+        <h1><a href="index.html"><img src="icon.jpg" alt="logo"></a>
+        AYBU Learning Advisory Program</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
     </nav>
 </header>
 <!-- Main content container -->
 <div id="container">
     <main>
-        <!-- Main program title -->
-        <h1>AYBU Learning Advisory Program</h1>
+       <!-- Introduction to the advising diaries -->
+       <h4>Welcome to ADVISING DIARIES</h4>
         <!-- Content section divided into left and right columns -->
         <div class="column">
             <!-- Left column for main content -->
@@ -53,12 +55,8 @@
                     <img src="https://picsum.photos/id/22/4434/3729" alt="Description of image 7">
                     <!-- Add as many images as you want in the slider -->
                 </div>
-                <div class="image-center">
-                    <img class="home-img" src="home.jpg" alt="picture" datatype="image/jpeg">
-                    <img class="home-img" src="home2.jpg" alt="picture" datatype="image/jpeg">
-                </div>
-                <!-- Introduction to the advising diaries -->
-                <h4>Welcome to ADVISING DIARIES</h4>
+              
+                
                 <!-- Multiple content blocks describing various topics -->
                 <div class="main-homepage">
                     <h3>Academic Contributions of AYBU Learning Advisory Program Unit</h3>
@@ -100,7 +98,7 @@
             </div>
             <!-- Right column for latest posts -->
             <div class="column_right">
-                <h4>Latest Posts:</h4>
+                <h2>Latest Posts:</h2>
                 <!-- Blog post summaries -->
                 <div class="main-blogs">
                     <h3>Manhattan</h3>
@@ -136,12 +134,11 @@
 </div>
 <!-- Footer section with additional information and social media links -->
 <footer>
-    <div>Advising Diaries is the blog of the Learning Advisory Program at Ankara Yıldırım Beyazıt University</div>
-    <div class="social-media">
-        <!-- Instagram link with icon -->
-        <a href="https://www.instagram.com/aybu_lap/">
-            <img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png" alt="Instagram">
-        </a>
+    <div class="footer-content">
+        <p>Advising Diaries is the blog of the Learning Advisory Program at Ankara Yıldırım Beyazıt University</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/aybu_lap/"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
     </div>
 </footer>
 </body>
