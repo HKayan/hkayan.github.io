@@ -86,6 +86,22 @@ $(document).ready(function() {
                 }
             });
         });
+        $('#date').datepicker({
+            maxDate: "+30d"
+        }); 
+    
+        $('#reservationForm').submit(function(e) {
+            e.preventDefault(); 
+    
+            
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var date = $('#date').val();
+            var time = $('#time').val();
+    
+            alert('Reservation successfully submitted!');
+            $('#reservationForm')[0].reset(); 
+        });
     });
     
 });
