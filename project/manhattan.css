@@ -166,7 +166,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000; /* Ensure the navigation bar stays on top of other content */
@@ -452,6 +451,7 @@ nav ul li a:hover {
 
 main {
   padding: 50px 20px;
+  margin: auto;
 }
 
 footer {
