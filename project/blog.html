@@ -8,13 +8,31 @@
   <title>Blog</title>
   <!-- Link to external stylesheet -->
   <link rel="stylesheet" type="text/css" href="manhattan.css">
-  <!-- jQuery -->
+  <!-- Link to favicon for the webpage -->
+  <link rel="icon" type="image/x-icon" href="icon.jpg">
   
+  <!-- Include Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Slick JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- Include jQuery UI CSS for datepicker -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- Include jQuery UI JS for datepicker -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Include RateYo CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <!--Include font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap">
 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Include RateYo JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <!-- Custom JS -->
   <script src="index.js"></script>
   
 
@@ -27,24 +45,30 @@
 <header>
   <div class="logo">
       <h1><a href="index.html"><img src="icon.jpg" alt="logo"></a>
-      </h1>
+      AYBU Learning Advisory Program</h1>
   </div>
   <nav>
       <ul>
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./about_us.html">About Us</a></li>
+          <li><a href="./join_us.html">Join Us</a></li>
           <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./resources.html">Gallery</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
           <li><a href="./contact_us.html">Contact Us</a></li>
       </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
   </nav>
 </header>
 
 <!-- Main container for the content -->
-<div id="container">
-  <main>
+
+<main>    
+  <div class="container">
     <!-- Container for blog entries -->
-    <div class="column">
+    <div class="home-upper">
       <!-- Blog section for language learning -->
       <div class="column_blogs">
         <h2>Language Learning</h2>
@@ -61,16 +85,18 @@
       <div class="column_blogs">
         <h2>Personal Reflections</h2>
         <div id="personal-reflections-container"></div>
+      </div>
     </div>
-  </main>
-</div>
-<footer>
-  <div> Advising Diaries is the blog of the Learning Advisory Program at Ankara Yıldırım Beyazıt University</div>
-  <div class="social-media">
-    <a href="https://www.instagram.com/aybu_lap/">
-      <img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9f9c321c774844b793180620472aa4f1.png" alt="Instagram">
-    </a>
   </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 AYBU Learning Advisory Program. All Rights Reserved.</p>
+    <div>
+        <a href="https://www.instagram.com/aybu_lap/"><img src="images/instagram.png" alt=""></a>
+        <a href="https://www.x.com"><img src="images/twitter.png" alt=""></a>
+        <a href="https://www.youtube.com"><img src="images/youtube.png" alt=""></a>
+    </div>
 </footer>
 </body>
 </html>
