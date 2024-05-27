@@ -160,10 +160,10 @@ $(document).ready(function() {
     }
     if ($(".image-gallery").length > 0){
         lightbox.option({
-            'resizeDuration': 200, // Geçiş süresi
-            'wrapAround': true,    // Galeri sonunda başa dönme
-            'showImageNumberLabel': false, // Görsel numaralarını gizleme
-            'alwaysShowNavOnTouchDevices': true // Dokunmatik cihazlarda navigasyonu sürekli gösterme
+            'resizeDuration': 200, 
+            'wrapAround': true,    
+            'showImageNumberLabel': false, 
+            'alwaysShowNavOnTouchDevices': true 
         });
     }
 });
